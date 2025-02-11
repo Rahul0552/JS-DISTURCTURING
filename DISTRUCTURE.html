@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Destructuring Assignment Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h1, h2 {
+            color: #007bff;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Destructuring Assignment Questions</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Basic Level Questions</h2>
+            <ul>
+                <li>Destructure the following object to extract its properties <code>name</code> and <code>age</code>.<br>
+                    <code>const person = { name: 'John', age: 30 };</code>
+                </li>
+                <li>Swap the values of variables <code>a</code> and <code>b</code> using destructuring.<br>
+                    <code>let a = 10, b = 20;</code>
+                </li>
+                <li>Destructure the following nested object to extract the properties <code>name</code> and <code>city</code>.<br>
+                    <code>const user = { name: 'Alice', address: { city: 'New York', country: 'USA' } };</code>
+                </li>
+                <li>Destructure the following array to extract the first two elements.<br>
+                    <code>const numbers = [10, 20, 30, 40];</code>
+                </li>
+                <li>Use destructuring to extract and print <code>name</code> and <code>age</code> from the following object with default values in case they are missing.<br>
+                    <code>const person = { name: 'John' };</code>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Medium Level Questions</h2>
+            <ul>
+                <li>Destructure the following nested object to extract <code>name</code>, <code>age</code>, and <code>city</code>.<br>
+                    <code>const user = { details: { name: 'Alice', age: 25, address: { city: 'New York', country: 'USA' } } };</code>
+                </li>
+                <li>Destructure the following array of objects to extract the <code>name</code> property from each object.<br>
+                    <code>const users = [ { name: 'John', age: 30 }, { name: 'Alice', age: 25 }, { name: 'Bob', age: 35 } ];</code>
+                </li>
+                <li>Use destructuring to extract <code>name</code> and <code>age</code> from the following object and collect the remaining properties into a variable called <code>details</code>.<br>
+                    <code>const person = { name: 'John', age: 30, city: 'New York', country: 'USA' };</code>
+                </li>
+                <li>Destructure the following object dynamically using a variable <code>prop</code> to extract <code>name</code> and <code>age</code>.<br>
+                    <code>const prop = 'user'; const data = { user: { name: 'Alice', age: 25 } };</code>
+                </li>
+                <li>Destructure the following object to extract the properties <code>name</code> and <code>age</code>, and use aliases to rename them as <code>fullName</code> and <code>yearsOld</code>, respectively.<br>
+                    <code>const person = { name: 'Alice', age: 30 };</code>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Advanced Level Questions</h2>
+            <ul>
+                <li>Destructure the following object to extract the properties <code>name</code>, <code>age</code>, and <code>city</code>, and use aliases <code>firstName</code> for <code>name</code> and <code>location</code> for <code>city</code>.<br>
+                    <code>const user = { name: 'John', age: 30, address: { city: 'New York', country: 'USA' } };</code>
+                </li>
+                <li>Write a function <code>printEmployee</code> that accepts an <code>employee</code> object and uses destructuring with default values for <code>name</code>, <code>position</code>, and <code>salary</code>. Use the rest pattern to collect additional properties and print all the details.<br>
+                    <code>const employee1 = { name: 'John', position: 'Manager', salary: '$70,000', department: 'Sales' };</code>
+                </li>
+                <li>Destructure the following nested object to extract <code>name</code>, <code>age</code>, and <code>city</code>, where <code>city</code> is a property of the <code>address</code> object inside the <code>details</code> object.<br>
+                    <code>const data = { details: { name: 'Alice', age: 25, address: { city: 'Los Angeles', country: 'USA' } } };</code>
+                </li>
+                <li>Use destructuring to extract the <code>firstName</code> and <code>lastName</code> properties from <code>userInfo</code> and rename them as <code>first</code> and <code>last</code>, respectively. Then print them using a function.<br>
+                    <code>const userInfo = { firstName: 'John', lastName: 'Doe' };</code>
+                </li>
+                <li>Write a function <code>getUserInfo</code> that accepts an object with nested properties and destructures it to return the <code>name</code> and <code>city</code>. Use a fallback value for <code>city</code> if it's missing.<br>
+                    <code>const user = { name: 'John', address: { country: 'USA' } };</code>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="Destructure.js" type="module"></script>
+</body>
+</html>
